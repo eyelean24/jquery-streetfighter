@@ -25,6 +25,20 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	});
+
+	$('.ryu').keydown(function(e) {
+		if(e.which == 88){
+			$('.ryu-still').hide();
+			$('.ryu-cool').show();
+		}
+	})
+
+	.keyup(function(e){
+		if(e.which == 88){
+			$('.ryu-still').hide();
+			$('.ryu-cool').show();
+		}
+	});
 });
 
 function playhadouken () {
